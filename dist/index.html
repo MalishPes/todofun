@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221006182837">
+    <title>Главная</title>
+</head>
+    <body>
+      <header>
+</header> 
+    <main>
+      <template id="task-item">
+        <li class="task-info js-task-info" draggable="true">
+            <p class="date"></p>
+            <p class="task-text"></p>
+            <button type="button" class="delete-task"></button>
+            <button type="button" class="done-task"></button>
+        </li>
+     
+    </template>
+    
+    
+        <div class="wrapper">
+        <h1>Привет, странник!
+        </h1>
+        <form class="add-tasks"  method="post" >
+            <input class="task-content" type="text" placeholder="Введите задачу">
+            <button class="add-task-btn" type="submit">добавить задачу</button>
+        </form>
+        <ul class="task-list">
+            <li class="task-info js-task-info" draggable="true">
+                <p class="date"></p>
+                <p class="task-text">MEOW MEOW</p>
+                <button type="button" class="delete-task"></button>
+                <button type="button" class="done-task">готово</button>
+            </li>
+        </ul>
+        <div class="task-table">
+       
+     <div class="urgent js-cell">
+                <h2 class="task-section__title">Срочные</h2>
+            </div>
+            <div class="important js-cell">
+                <h2 class="task-section__title">Важные</h2>
+    
+            </div>
+            <div class="un-urgent_important js-cell">
+                <h2 class="task-section__title">Несрочные важные</h2>
+            </div>
+            <div class="un-urgent_un-important js-cell">
+                <h2 class="task-section__title">Несрочные неважные</h2>
+            </div>
+       
+        </div>
+       
+    </div>
+    </main>
+      <footer></footer>
+      <script src="js/app.min.js?_v=20221006182837"></script>
+    </body>
+</html>
