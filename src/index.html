@@ -15,22 +15,28 @@
         </li>
      
     </template>
+
+<div class="welcome-section">
+    <div class="welcome-section__wrapper">
+        <h1 class="welcome-section__greeting-title">Привет, любитель планирования!</h1>
+        <form class="welcome-section__name-form" method="post">
+            <input class="welcome-section__name-input" type="text" placeholder="введи свое имя">
+            <button class="welcome-section__btn" type="submit">submit</button>
+        </form>
+   
+    </div>
     
+</div>
     
-        <div class="wrapper">
-        <h1>Привет, странник!
+        <div class="main wrapper wrapper-js">
+        <h1 class="main__greeting-title">Привет, странник!
         </h1>
         <form class="add-tasks"  method="post" >
             <input class="task-content" type="text" placeholder="Введите задачу">
-            <button class="add-task-btn" type="submit">добавить задачу</button>
+            <button class="add-task-btn" type="button">добавить задачу</button>
         </form>
         <ul class="task-list">
-            <li class="task-info js-task-info" draggable="true">
-                <p class="date"></p>
-                <p class="task-text"> MEOWMEOW</p>
-                <button type="button" class="delete-task"></button>
-                <button type="button" class="done-task">готово</button>
-            </li>
+           
         </ul>
         <div class="task-table">
        

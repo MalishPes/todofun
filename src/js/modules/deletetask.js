@@ -1,6 +1,8 @@
+
  const toDeleteTask = function(){
-    let deleteBtns = document.querySelectorAll('.delete-task');
     let taskCards = document.querySelectorAll('.js-task-info');
+    let taskList = document.querySelector('.task-list');
+    let deleteBtns = document.querySelectorAll('.delete-task');
     let doneBtns = document.querySelectorAll('.done-task');
     for(let i=0; i<taskCards.length; i++){
     let deleteBtn = deleteBtns[i];
@@ -8,6 +10,8 @@
     let taskCard = taskCards[i];
     
     deleteBtn.addEventListener('click', function(evt){
+        console.log(taskCards.length);
+
         taskCard.style.transition = 'all 1s' ;
         taskCard.style.backgroundColor = '#8b5824';
         setTimeout(()=>{
@@ -25,4 +29,4 @@
     })
     }
 }
-export default toDeleteTask();
+export {toDeleteTask};

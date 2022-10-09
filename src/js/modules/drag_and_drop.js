@@ -1,7 +1,7 @@
 
 
 const dragAndDrop = ()=> {
-    let taskCards = document.querySelectorAll('.js-task-info');
+    let  taskCards = document.querySelectorAll('.js-task-info');
      let cells = document.querySelectorAll('.js-cell'); 
  if(taskCards.length>0){
      for (let i=0;i<taskCards.length; i++){
@@ -26,19 +26,21 @@ const dragAndDrop = ()=> {
          taskCard.addEventListener('dragend', dragEnd);
     
          const dragOver = function(evt){
+             evt.stopImmediatePropagation();
              evt.preventDefault();
+
           }
           const dragEnter = function(evt){
               evt.preventDefault();
+              evt.stopImmediatePropagation();
+
               this.classList.add('hovered');
           }
           const dragLeave = function(){
-            //  console.log('leave');
               this.classList.remove('hovered');
       
           }
           const dragDrop = function(){
-            //  console.log(taskCard);
             if(taskCard.classList.contains('chosen')){
              this.classList.remove('hovered');
              this.append(taskCard);
@@ -60,6 +62,5 @@ const dragAndDrop = ()=> {
  }
  
  
- export default dragAndDrop();
- 
+ export { dragAndDrop};
  
