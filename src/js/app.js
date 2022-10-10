@@ -11,3 +11,5 @@ addTask();
 import {greeting} from "./modules/greeting.js";
 greeting();
 
+import animateImg from "./modules/welcome_anim.js"
+animateImg();
