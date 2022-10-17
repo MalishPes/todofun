@@ -6,9 +6,9 @@ addTask();
 
 
 import {greeting} from "./modules/greeting.js";
-greeting(`alla`);
+greeting();
 
 import {animateImg} from "./modules/welcome_anim.js"
-//animateImg();
+animateImg();
 console.info(greeting(`anna`))
 //console.info(greeting());
