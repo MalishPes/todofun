@@ -26,5 +26,5 @@ const animateImg = ()=> {
 }
 
 
-export default animateImg;
+export  {animateImg as animateImg};
 

@@ -1,15 +1,14 @@
 import * as flsFunctions from "./modules/functions.js";
 flsFunctions.isWebp();
 
-import addTask from "./modules/addtask.js";
+import {addTask} from "./modules/addtask.js";
 addTask();
-
-//import welcomeWindow from "./modules/welcome_module.js";
-//welcomeWindow();
 
 
 import {greeting} from "./modules/greeting.js";
-greeting();
+greeting(`alla`);
 
-import animateImg from "./modules/welcome_anim.js"
-animateImg();
+import {animateImg} from "./modules/welcome_anim.js"
+//animateImg();
+console.info(greeting(`anna`))
+//console.info(greeting());

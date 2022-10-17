@@ -28,4 +28,4 @@ evt.preventDefault();
 
 }
 //export{taskList};
-export default addTask;
+export  {addTask as addTask};

@@ -6,20 +6,26 @@ const greeting = (name=`cтранник`)=> {
     const welcomeSection = document.querySelector('.welcome-section');
     const wrapper = document.querySelector('.wrapper');
     form.addEventListener('submit', function(evt){
-        console.log('hi')
+        //console.log('hi')
         evt.preventDefault();
-        name = nameInput.value;
-        console.log(nameInput.value);
+       let newName = nameInput.value;
+       // console.log(nameInput.value);
+
+       if(newName!==' ' && newName!=='' && newName!=='  '&& newName!=='   '
+       ){
+        name=newName
+       }
         welcomeSection.style.opacity = '0';
         setTimeout(()=>{
-            welcomeSection.style.display = 'none';
+        welcomeSection.style.display = 'none';
         }, 2000)
+        wrapper.classList.remove('wrapper-js');
 
         //welcomeSection.style.zIndex = '0';
         //wrapper.style.zIndex = '1';
 
-        wrapper.classList.remove('wrapper-js');
-        greetigTitle.textContent = `Привет, ${name}!`
+       return  greetigTitle.textContent = `Привет, ${name}!`
+        
     })
 }
 

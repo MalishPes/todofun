@@ -62,5 +62,5 @@ const dragAndDrop = ()=> {
  }
  
  
- export { dragAndDrop};
+ export { dragAndDrop as dragAndDrop};
  

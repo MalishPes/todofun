@@ -29,4 +29,4 @@
     })
     }
 }
-export {toDeleteTask};
+export {toDeleteTask as toDeleteTask};
