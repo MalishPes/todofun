@@ -17,7 +17,7 @@ const animateImg = ()=> {
                      leftValue = -40;
                 }
            
-        }, 33.3)
+        }, 66.3)
         
       
     })
